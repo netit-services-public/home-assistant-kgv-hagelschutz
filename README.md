@@ -7,7 +7,7 @@ Installation über HACS - Assistant Community Store ( HACS ) eine benutzerdefini
 
 Voraussetzung: HACS installiert?
 
-1.	Ist HACS bereits installiert?
+1. Ist HACS bereits installiert?
 	•	Wenn ja: Wechseln Sie im linken Menü zu HACS
 	•	Wenn nein: Hier finden Sie die offizielle Anleitung zur HACS-Installation
     
