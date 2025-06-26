@@ -1,0 +1,7 @@
+{
+  "name": "Hagelschutz Einfach Automatisch",
+  "content_in_root": false,
+  "domains": ["sensor"],
+  "country": "CH",
+  "render_readme": true
+}

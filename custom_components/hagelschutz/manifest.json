@@ -1,0 +1,11 @@
+{
+  "domain": "hagelschutz",
+  "name": "Hagelschutz Einfach Automatisch",
+  "version": "1.0.0",
+  "documentation": "https://www.hagelschutz-einfach-automatisch.ch",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@IhrName"],
+  "config_flow": true,
+  "license": "MIT"
+}

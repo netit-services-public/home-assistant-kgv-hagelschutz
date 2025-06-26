@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Hagelschutz Integration",
+        "description": "Bitte geben Sie Ihre Device ID und optional die Schnittstellen-Typ-ID ein."
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen"
+    }
+  }
+}
