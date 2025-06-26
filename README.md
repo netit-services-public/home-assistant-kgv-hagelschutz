@@ -5,15 +5,24 @@ Diese Integration bindet das Hagelschutz-Signal der kantonalen Gebäudeversicher
 
 Installation über HACS - Assistant Community Store ( HACS ) eine benutzerdefinierte Integration, die eine Benutzeroberfläche zum Verwalten benutzerdefinierter Elemente in Home Assistant bereitstellt.
 
-1. Öffne HACS in Home Assistant  
-2. Gehe zu **Integrationen → 3 Punkte → Benutzerdefiniertes Repository hinzufügen**  
-3. Füge folgendes Repository ein:
+Voraussetzung: HACS installiert?
 
-https://github.com/netit-services-public/home-assistant-kgv-hagelschutz
+1.	Ist HACS bereits installiert?
+	•	Wenn ja: Wechseln Sie im linken Menü zu HACS
+	•	Wenn nein: Hier finden Sie die offizielle Anleitung zur HACS-Installation
+    
+   https://www.hacs.xyz/docs/use/configuration/basic/#setting-up-the-hacs-integration
 
-4. Wähle Typ: **Integration**
-5. Nach dem Hinzufügen → Integration wie gewohnt installieren
-6. Danach unter **„Integration hinzufügen“** aktivieren
+
+2. Öffne HACS in Home Assistant  
+3. Gehe zu **Integrationen → 3 Punkte → Benutzerdefiniertes Repository hinzufügen**  
+4. Füge folgendes Repository ein:
+
+   https://github.com/netit-services-public/home-assistant-kgv-hagelschutz
+
+5. Wähle Typ: **Integration**
+6. Nach dem Hinzufügen → Integration wie gewohnt installieren
+7. Danach unter **„Integration hinzufügen“** aktivieren
 
 ## Konfiguration
 
