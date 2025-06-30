@@ -2,6 +2,9 @@
   "name": "Hagelschutz Einfach Automatisch",
   "content_in_root": false,
   "domains": ["sensor"],
+  "domain": "hagelschutz",
   "country": "CH",
-  "render_readme": true
+  "homeassistant": "2024.1.0",
+  "render_readme": true,
+  "zip_release": false
 }
