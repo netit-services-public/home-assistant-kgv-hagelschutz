@@ -1,0 +1,26 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Hagelschutz konfigurieren",
+        "description": "Gib deine Gerätedaten ein",
+        "data": {
+          "device_id": "Geräte-ID",
+          "hwtype_id": "Hardware-Typ-ID (optional)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "hagelalarm": {
+        "name": "Hagelalarm",
+        "state": {
+          "active": "Aktiv",
+          "inactive": "Inaktiv",
+          "unknown": "Unbekannt"
+        }
+      }
+    }
+  }
+}

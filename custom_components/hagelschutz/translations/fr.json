@@ -1,0 +1,26 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer la protection contre la grêle",
+        "description": "Entrez les données de votre appareil",
+        "data": {
+          "device_id": "ID de l'appareil",
+          "hwtype_id": "ID du type matériel (facultatif)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "hagelalarm": {
+        "name": "Alerte Grêle",
+        "state": {
+          "active": "Actif",
+          "inactive": "Inactif",
+          "unknown": "Inconnu"
+        }
+      }
+    }
+  }
+}
