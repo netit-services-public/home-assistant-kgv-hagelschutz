@@ -1,20 +1,23 @@
-# Hagelschutz Einfach Automatisch
+# Home Assistant Custom Integration: Hagelschutz einfach automatisch
 
-Eine Home Assistant Custom Component zur Integration von Hagelsensor-Daten über die NetIT API.
+Diese Integration stellt einen Sensor `sensor.hagelalarm` bereit, der regelmäßig das Hagelsignal von `meteo.netitservices.com` abruft.
 
-## Einrichtung
+## Features
 
-1. Diese Komponente über HACS als benutzerdefiniertes Repository einbinden.
-2. Nach der Installation Home Assistant neu starten.
-3. Integration über die Benutzeroberfläche hinzufügen („Hagelschutz Einfach Automatisch“) und Device-ID eingeben.
+- 🧩 Sensor: `hailState` wird ausgelesen
+- ⚙️ Konfiguration über UI (`device_id` + `hwtype_id`)
+- 🔄 Automatische Aktualisierung (alle 2 Minuten)
+- 🌐 Mehrsprachig: DE / EN / FR
+- 🔐 Saubere Fehlerbehandlung
+- 🛠 Zukunftssicher über Konstante konfigurierbare API-URL
 
-## Sensor
+## Installation
 
-Die Integration erstellt einen Sensor mit dem aktuellen Hagelstatus (`hailState`).
+1. Repo klonen oder ZIP entpacken
+2. Ordner `hagelschutz/` nach `config/custom_components/` kopieren
+3. Home Assistant neu starten
+4. Integration „Hagelschutz einfach automatisch“ über UI hinzufügen
 
-## Quelle
+## Lizenz
 
-Datenquelle:
-```
-https://meteo.netitservices.com/api/v0/devices/<device_id>/poll?hwtypeId=188
-```
+MIT License – siehe LICENSE-Datei.
