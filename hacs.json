@@ -1,10 +1,9 @@
 {
-  "name": "Hagelschutz einfach automatisch",
-  "image": "https://raw.githubusercontent.com/netit-services-public/home-assistant-kgv-hagelschutz/main/logo.png"
+  "name": "Hagelschutz Einfach Automatisch",
   "content_in_root": false,
-  "domain": "hagelschutz",
-  "country": ["de", "ch", "at", "fr"],
-  "homeassistant": "2023.12.0",
+  "domains": ["sensor"],
+  "country": "CH",
   "render_readme": true,
-  "iot_class": "cloud_polling"
+  "filename": "hagelschutz",
+  "zip_release": false
 }
