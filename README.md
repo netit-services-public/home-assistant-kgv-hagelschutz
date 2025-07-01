@@ -1,4 +1,5 @@
-# Home Assistant Custom Integration: Hagelschutz einfach automatisch
+# Home Assistant Custom Integration: 
+# Hagelschutz einfach automatisch
 
 Diese Integration stellt einen Sensor `sensor.hagelalarm` bereit, der regelmäßig das Hagelsignal von `meteo.netitservices.com` abruft.
 
