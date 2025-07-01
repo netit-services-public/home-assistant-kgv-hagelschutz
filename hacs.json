@@ -1,10 +1,9 @@
 {
-  "name": "Hagelschutz Einfach Automatisch",
+  "name": "Hagelschutz einfach automatisch",
   "content_in_root": false,
-  "domains": ["sensor"],
   "domain": "hagelschutz",
-  "country": "CH",
-  "homeassistant": "2024.1.0",
+  "country": ["de", "ch", "at", "fr"],
+  "homeassistant": "2023.12.0",
   "render_readme": true,
-  "zip_release": false
+  "iot_class": "cloud_polling"
 }

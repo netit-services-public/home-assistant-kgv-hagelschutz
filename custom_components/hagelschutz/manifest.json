@@ -1,8 +1,8 @@
 {
   "domain": "hagelschutz",
-  "name": "Hagelschutz Einfach",
+  "name": "Hagelschutz einfach automatisch",
   "version": "1.0.0",
-  "documentation": "https://example.com/hagelschutz-docs",
+  "documentation": "https://github.com/netit-services-public/home-assistant-kgv-hagelschutz",
   "dependencies": [],
   "codeowners": ["@yourgithub"],
   "requirements": [],

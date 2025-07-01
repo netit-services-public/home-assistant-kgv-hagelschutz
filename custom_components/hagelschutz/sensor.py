@@ -1,17 +1,18 @@
 from homeassistant.helpers.entity import Entity
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
-from homeassistant.core import callback
 from homeassistant.config_entries import ConfigEntry
+from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.const import CONF_DEVICE_ID
 from .const import DOMAIN, DEFAULT_HWTYPE_ID, DEFAULT_SCAN_INTERVAL, API_URL_TEMPLATE
+
 import aiohttp
 import asyncio
 import logging
 
 _LOGGER = logging.getLogger(__name__)
 
-async def async_setup_entry(hass, entry: ConfigEntry, async_add_entities: AddEntitiesCallback):
+async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_entities: AddEntitiesCallback):
     device_id = entry.data[CONF_DEVICE_ID]
     hwtype_id = entry.data.get("hwtype_id", DEFAULT_HWTYPE_ID)
 
@@ -25,7 +26,7 @@ class HailCoordinator(DataUpdateCoordinator):
         super().__init__(
             hass,
             _LOGGER,
-            name="Hagelschutz",
+            name=DOMAIN,
             update_interval=asyncio.timedelta(seconds=DEFAULT_SCAN_INTERVAL),
         )
         self.device_id = device_id
@@ -36,10 +37,12 @@ class HailCoordinator(DataUpdateCoordinator):
         async with aiohttp.ClientSession() as session:
             try:
                 async with session.get(url) as response:
+                    if response.status != 200:
+                        raise UpdateFailed(f"HTTP {response.status}")
                     data = await response.json()
                     return data.get("hailState", "unknown")
-            except Exception as e:
-                raise UpdateFailed(f"Fehler beim Abrufen: {e}")
+            except Exception as err:
+                raise UpdateFailed(f"Update error: {err}")
 
 class HagelschutzSensor(Entity):
     def __init__(self, coordinator: HailCoordinator):
@@ -50,12 +53,12 @@ class HagelschutzSensor(Entity):
         return "Hagelalarm"
 
     @property
-    def state(self):
-        return self.coordinator.data
-
-    @property
     def unique_id(self):
         return f"hagelschutz_{self.coordinator.device_id}"
+
+    @property
+    def state(self):
+        return self.coordinator.data
 
     async def async_update(self):
         await self.coordinator.async_request_refresh()

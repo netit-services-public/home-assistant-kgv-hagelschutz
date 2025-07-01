@@ -3,22 +3,10 @@
     "step": {
       "user": {
         "title": "Configure Hail Protection",
-        "description": "Enter your device data",
+        "description": "Please enter your device ID and hardware type.",
         "data": {
           "device_id": "Device ID",
           "hwtype_id": "Hardware Type ID (optional)"
-        }
-      }
-    }
-  },
-  "entity": {
-    "sensor": {
-      "hagelalarm": {
-        "name": "Hail Alarm",
-        "state": {
-          "active": "Active",
-          "inactive": "Inactive",
-          "unknown": "Unknown"
         }
       }
     }
