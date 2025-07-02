@@ -4,10 +4,10 @@
   "domains": ["sensor"],
   "country": "CH",
   "render_readme": true,
-  "zip_release": true,
+  "zip_release": false,
   "filename": "custom_components/hagelschutz/manifest.json",
   "domain": "hagelschutz",
   "branding": {
-    "logo": "logo.png"
+    "logo": "hacsfiles/hagelschutz/icon.png"
   }
 }
