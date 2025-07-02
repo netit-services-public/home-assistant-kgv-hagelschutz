@@ -2,19 +2,19 @@
   "config": {
     "step": {
       "user": {
-        "title": "Hagelschutz konfigurieren",
-        "description": "Bitte gib deine Geräte-ID und den Hardware-Typ ein.",
+        "title": "Configure Hail Protection",
+        "description": "Please enter your Device ID and Hardware Type.",
         "data": {
-          "device_id": "Geräte-ID",
-          "hwtype_id": "Hardware-Typ-ID (optional)"
+          "device_id": "Device ID",
+          "hwtype_id": "Hardware Type ID (optional)"
         }
       }
     },
     "error": {
-      "invalid_device_id": "Die Geräte-ID muss genau 12 alphanumerische Zeichen enthalten."
+      "invalid_device_id": "Device ID must be exactly 12 alphanumeric characters."
     },
     "abort": {
-      "already_configured": "Diese Geräte-ID ist bereits konfiguriert."
+      "already_configured": "This Device ID is already configured."
     }
   }
 }
