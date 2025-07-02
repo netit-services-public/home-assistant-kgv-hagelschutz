@@ -1,13 +1,13 @@
 {
   "name": "Hagelschutz Einfach Automatisch",
-  "content_in_root": false,
+  "content_in_root": true,
   "domains": ["sensor"],
   "country": "CH",
   "render_readme": true,
-  "zip_release": false,
+  "zip_release": true,
   "filename": "custom_components/hagelschutz/manifest.json",
   "domain": "hagelschutz",
   "branding": {
-    "logo": "hagelschutz/icon.png"
+    "logo": "logo.png"
   }
 }
