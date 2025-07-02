@@ -1,11 +1,11 @@
-
 {
   "domain": "hagelschutz",
   "name": "Hagelschutz Einfach Automatisch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "documentation": "https://github.com/netit-services-public/home-assistant-kgv-hagelschutz",
   "requirements": ["aiohttp"],
   "codeowners": ["@netit-services-public"],
   "config_flow": true,
-  "iot_class": "cloud_polling"
+  "iot_class": "cloud_polling",
+  "icon": "custom_components/hagelschutz/icon.png"
 }
