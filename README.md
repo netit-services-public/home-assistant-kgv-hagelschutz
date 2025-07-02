@@ -2,6 +2,10 @@
 # Hagelschutz einfach automatisch
 
 Diese Integration stellt einen Sensor `sensor.hagelalarm` bereit, der regelmäßig das Hagelsignal von `meteo.netitservices.com` abruft.
+Wichtig: Das Hagelsignal ist ausschliesslich für die Schweiz verfügbar um es empfangen zu können muss vorab eine Registration für die
+Teilnahme am kostenlosen Hagelalarm Signal Service bei der jeweiligen Gebäudeversicherung beantragt werden siehe auch: 
+
+https://www.hagelschutz-einfach-automatisch.ch/eigentuemer-verwaltungen/produkt/ich-habe-interesse.html
 
 ## Features
 
