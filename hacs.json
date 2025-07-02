@@ -8,6 +8,6 @@
   "filename": "custom_components/hagelschutz/manifest.json",
   "domain": "hagelschutz",
   "branding": {
-    "logo": "hacsfiles/hagelschutz/icon.png
+    "logo": "hacsfiles/hagelschutz/icon.png"
   }
 }
