@@ -2,13 +2,19 @@
   "config": {
     "step": {
       "user": {
-        "title": "Configurer la protection contre la grêle",
-        "description": "Veuillez saisir l'ID de l'appareil et le type de matériel.",
+        "title": "Hagelschutz konfigurieren",
+        "description": "Bitte gib deine Geräte-ID und den Hardware-Typ ein.",
         "data": {
-          "device_id": "ID de l'appareil",
-          "hwtype_id": "ID du type matériel (facultatif)"
+          "device_id": "Geräte-ID",
+          "hwtype_id": "Hardware-Typ-ID (optional)"
         }
       }
+    },
+    "error": {
+      "invalid_device_id": "Die Geräte-ID muss genau 12 alphanumerische Zeichen enthalten."
+    },
+    "abort": {
+      "already_configured": "Diese Geräte-ID ist bereits konfiguriert."
     }
   }
 }

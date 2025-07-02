@@ -9,6 +9,12 @@
           "hwtype_id": "Hardware-Typ-ID (optional)"
         }
       }
+    },
+    "error": {
+      "invalid_device_id": "Die Geräte-ID muss genau 12 alphanumerische Zeichen enthalten."
+    },
+    "abort": {
+      "already_configured": "Diese Geräte-ID ist bereits konfiguriert."
     }
   }
 }
