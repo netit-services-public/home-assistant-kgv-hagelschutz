@@ -36,7 +36,7 @@ https://www.hagelschutz-einfach-automatisch.ch/eigentuemer-verwaltungen.html
 
 1. **HACS öffnen → Integrationen**
 2. Klicke auf `⋮` (oben rechts) → **Benutzerdefinierte Repositories**
-   - Repository: `https://github.com/<DEIN-REPO>/hagelschutz`
+   - Repository: `https://[github.com/<DEIN-REPO>/hagelschutz](https://github.com/netit-services-public/home-assistant-kgv-hagelschutz)`
    - Typ: **Integration**
 3. Suche in HACS nach **Hagelschutz einfach automatisch** und installiere die Integration
 4. **Home Assistant neu starten**
