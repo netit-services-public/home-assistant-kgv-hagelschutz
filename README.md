@@ -1,36 +1,60 @@
-# Home Assistant Custom Integration: 
+# Home Assistant Custom Integration:  
 # Hagelschutz einfach automatisch
 
-Diese Integration stellt einen Sensor `sensor.hagelalarm` bereit, der regelmäßig das Hagelsignal von `meteo.netitservices.com` abruft.
-Wichtig: Das Hagelsignal ist ausschliesslich für die Schweiz verfügbar um es empfangen zu können.  Es muss vorab eine Registration für die
-Teilnahme am kostenlosen Hagelalarm Signal Service bei der jeweiligen Gebäudeversicherung beantragt werden siehe auch: 
+Diese Integration stellt einen Sensor `sensor.hagelalarm` bereit, der regelmäßig das Hagelsignal von [`meteo.netitservices.com`](https://meteo.netitservices.com) abruft.
 
-https://www.hagelschutz-einfach-automatisch.ch/eigentuemer-verwaltungen/produkt/ich-habe-interesse.html
+> **Hinweis:**  
+> Das Hagelsignal ist ausschließlich für die Schweiz verfügbar.  
+> Vor der Nutzung ist eine Registrierung bei der Gebäudeversicherung erforderlich:  
+> [Zur Anmeldung für den kostenlosen Hagelalarm-Service](https://www.hagelschutz-einfach-automatisch.ch/eigentuemer-verwaltungen/produkt/ich-habe-interesse.html)
 
-Allgemeine Informationen zum Produkt "Hagelsschutz einfach automatisch" findes unter:
-
+Weitere Informationen zum Produkt **„Hagelschutz einfach automatisch“** findest du unter:   
 https://www.hagelschutz-einfach-automatisch.ch/eigentuemer-verwaltungen.html
 
-Erklärvidieo:
+**Erklärvideo auf YouTube**:  
+[https://youtu.be/4TQfq9t-z-M](https://youtu.be/4TQfq9t-z-M?si=srTs5QX9Dp4_-UdI)
 
-https://youtu.be/4TQfq9t-z-M?si=srTs5QX9Dp4_-UdI  
+---
 
-## Home Assistant - Features
+## Features
 
-- 🧩 Sensor: `hailState` wird ausgelesen
-- ⚙️ Konfiguration über UI (`device_id` + `hwtype_id`)
-- 🔄 Automatische Aktualisierung (alle 2 Minuten)
-- 🌐 Mehrsprachig: DE / EN / FR
-- 🔐 Saubere Fehlerbehandlung
-- 🛠 Zukunftssicher über Konstante konfigurierbare API-URL
+- `hailState` Sensor zur Anzeige des aktuellen Hagelstatus
+- Konfiguration über Home Assistant UI (`device_id` + optional `hwtype_id`)
+- Automatische Aktualisierung alle 2 Minuten
+- Mehrsprachigkeit: Deutsch / Englisch / Französisch
+- Fehlerbehandlung bei API-Zugriff integriert
+---
 
-## Installation
+## Installation (via HACS empfohlen)
 
-1. Repo klonen oder ZIP entpacken
+### Voraussetzungen
+
+- Home Assistant Version ≥ 2025.6.0  
+- [HACS (Home Assistant Community Store)](https://hacs.xyz) ist eingerichtet
+
+### Schritt-für-Schritt:
+
+1. **HACS öffnen → Integrationen**
+2. Klicke auf `⋮` (oben rechts) → **Benutzerdefinierte Repositories**
+   - Repository: `https://github.com/<DEIN-REPO>/hagelschutz`
+   - Typ: **Integration**
+3. Suche in HACS nach **Hagelschutz einfach automatisch** und installiere die Integration
+4. **Home Assistant neu starten**
+5. Gehe zu **Einstellungen → Geräte & Dienste → Integration hinzufügen**
+   - Wähle **Hagelschutz einfach automatisch** aus der Liste
+6. Trage `device_id` ein (Pflicht) + optional `hwtype_id`
+
+---
+
+## Manuelle Installation (nur für Entwickler)
+
+1. ZIP herunterladen oder Repository klonen
 2. Ordner `hagelschutz/` nach `config/custom_components/` kopieren
 3. Home Assistant neu starten
-4. Integration „Hagelschutz einfach automatisch“ über UI hinzufügen
+4. Integration im UI wie oben hinzufügen
+
+---
 
 ## Lizenz
 
-MIT License – siehe LICENSE-Datei.
+MIT License – siehe [LICENSE](./LICENSE)
